@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <!-- === INPUT FIELD === -->
+        <div class="student-result">
+            <div class="head">
+                <div class="image"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="headings"><h2>Student Result System</h2><p>Add students, check results & see summary</p></div>
+            </div>
+            <div class="student-enter">
+                <div class="input-feild">
+                    <div class="new-st"><i class="fa-solid fa-user-plus"></i><h3>Add New Student</h3></div>
+                    <div class="form-feild">
+                        <form id = "form" class="form">
+                            <label>Student Name</label>
+                            <input type="text" id="name" placeholder="Enter student name">
+                            <label>Marks(0 - 100)</label>
+                            <input type="text"id="marks" placeholder="Enter marks">
+                            <button type="submit"><i class="fa-solid fa-plus"></i>Add Student</button>
+                        </form>
+                    </div>
+                </div>      
+                                <!-- END-! -->
+                <!-- === SUMMARY UPDATE === -->
+                <div class="summary">
+                    <div class="s-icon"><i class="fa-solid fa-align-right"></i><p>Summary</p></div>
+                    <div class="cards">
+                        <div class="two-cards">
+                        <div class="card-1"><i class="fa-solid fa-users"></i><p id="total-student"></p><p>Total Students</p></div>
+                        <div class="card-2"><i class="fa-solid fa-circle-check"></i><p id="pass"></p><p> Pass Students</p></div>
+                        </div>      
+                        <div class="next-two">
+                        <div class="card-3"><i class="fa-solid fa-circle-xmark"></i><p id="fail"></p><p> Fail Students</p></div>
+                        <div class="card-4"><i class="fa-solid fa-star"></i><p id="percentage"></p><p>Total percentage</p></div>  
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+                            <!-- END-! -->
+            <!-- === LIST OF ALL STUDENT === -->
+            <div class="student-list">
+                <div class="st-list"><i class="fa-solid fa-list"></i><p>Students List</p></div>
+                <div class="table-list">
+                    <table class="table">
+                        <thead class="t-head">
+                            <tr class="t-row">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Marks</th>
+                                <th>Grade</th>
+                                <th>Result</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody class="t-body" id="tablebody">
+                            </tbody>
+                        </thead>
+                    </table>
+                                    <!-- END-! -->
+                </div>
+            </div>
+        </div>
+
+
+        <div>gope</div>
+    </section>
+    <script src=".js"></script>
+    
+   
+    
+</body>
+</html>
